@@ -67,19 +67,19 @@ export const links = [
 				id: '2',
 				name: 'apple music',
 				url:
-					'https://open.spotify.com/album/2HPj0XZe9WduSsyKTQqgVa?si=z-taeVNKQcCfBa5jBZZbaw&nd=1',
+					'https://music.apple.com/au/album/_/1580491222?i=1580491233&ign-itscg=30200&ign-itsct=lt_m',
 			},
 			{
 				id: '3',
 				name: 'soundcloud',
 				url:
-					'https://open.spotify.com/album/2HPj0XZe9WduSsyKTQqgVa?si=z-taeVNKQcCfBa5jBZZbaw&nd=1',
+					'https://soundcloud.com/nikizefanya/every-summertime',
 			},
 			{
 				id: '4',
 				name: 'youtube music',
 				url:
-					'https://open.spotify.com/album/2HPj0XZe9WduSsyKTQqgVa?si=z-taeVNKQcCfBa5jBZZbaw&nd=1',
+					'https://www.youtube.com/watch?v=UyMvBWVGaOA',
 			},
 			{
 				id: '5',
