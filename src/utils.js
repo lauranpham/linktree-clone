@@ -9,6 +9,7 @@ export const renderMusicPlayer = (embedUrl) => {
 				src={embedUrl}
 				width={'100%'}
 				height={'380'}
+				data-testid='music-player'
 				frameBorder={'0'}
 				allow={
 					'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
@@ -18,6 +19,8 @@ export const renderMusicPlayer = (embedUrl) => {
 	);
 };
 
-export const getSocialIcon = (name) => socialIcons.find((social) => social.name === name).icon
+export const getSocialIcon = (name) =>
+	socialIcons.find((social) => social.name === name).icon;
 
-export const getDateString = (date) => new Date(date).toString().toString().split(" ").slice(1,4).join(" ")
+export const getDateString = (date) =>
+	new Date(date).toString().toString().split(' ').slice(1, 4).join(' ');

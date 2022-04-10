@@ -28,18 +28,25 @@ const renderShow = (show) => {
 		) : (
 			<p>{status}</p>
 		);
-	return <SubLink key={id} details={showDetails} nav={showLink} url={url}/>;
+	return <SubLink key={id} details={showDetails} nav={showLink} url={url} />;
 };
 
 const ShowsLink = ({ shows, title }) => {
 	// ShowsLink displays a list of links to upcoming shows
-	const header = <PrimaryLink title={title} />
-	const showsList = (shows.length > 0) ? shows
-		.sort((a, b) => new Date(a.date) - new Date(b.date))
-		.map((show) => {
-			return renderShow(show);
-		}) : <h6 className="text-container">no available shows</h6>;
-	return <Accordian header={header} content={showsList} footer={songKickLogo}/>;
+	const header = <PrimaryLink title={title} />;
+	const showsList =
+		shows.length > 0 ? (
+			shows
+				.sort((a, b) => new Date(a.date) - new Date(b.date))
+				.map((show) => {
+					return renderShow(show);
+				})
+		) : (
+			<h6 className='text-container'>no available shows</h6>
+		);
+	return (
+		<Accordian header={header} content={showsList} footer={songKickLogo} />
+	);
 };
 
 ShowsLink.propTypes = {

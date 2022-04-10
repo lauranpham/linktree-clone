@@ -14,27 +14,40 @@ const renderMusicService = (service) => {
 			<FaChevronRight />
 		</a>
 	);
-	const logo = getSocialIcon(name);
+	const logo = (
+		<a href={url} target='_blank' className='icon-container'>
+			<img src={getSocialIcon(name)} alt='logo' />
+		</a>
+	);
 	return (
-		<SubLink key={id} logo={logo} details={musicDetails} nav={musicLink} url={url} />
+		<SubLink
+			key={id}
+			logo={logo}
+			details={musicDetails}
+			nav={musicLink}
+			url={url}
+		/>
 	);
 };
 
 const MusicLink = ({ services, title, embedUrl }) => {
 	// MusicLink displays a list of links to upcoming shows
-	const header = <PrimaryLink title={title} />
-	const musicList = services.length > 0 ? services.map((service) => {
-		return renderMusicService(service);
-	}) : <h6 className="text-container">no available streaming services</h6>;
+	const header = <PrimaryLink title={title} />;
+	const musicList =
+		services.length > 0 ? (
+			services.map((service) => {
+				return renderMusicService(service);
+			})
+		) : (
+			<h6 className='text-container'>no available streaming services</h6>
+		);
 	const musicContent = (
 		<>
 			{embedUrl && renderMusicPlayer(embedUrl)}
 			{musicList}
 		</>
 	);
-	return (
-		<Accordian header={header} content={musicContent} />
-	);
+	return <Accordian header={header} content={musicContent} />;
 };
 
 MusicLink.propTypes = {
@@ -45,7 +58,7 @@ MusicLink.propTypes = {
 
 MusicLink.defaultProps = {
 	services: [],
-    title: "",
-}
+	title: '',
+};
 
 export default MusicLink;

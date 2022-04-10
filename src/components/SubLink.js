@@ -1,26 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SubLink = ({ logo, details, nav, url }) => {    
+const SubLink = ({ logo, details, nav }) => {
 	return (
-        <a href={url} target="_blank" className="link-container">
-            {/* show link logo */}
-            {logo && 
-            <div className="icon-container">
-                <img src={logo} alt="logo"/>
-            </div>
-            }
-            {/* show link details */}
-            <div className="link-content">
-                <div className="link-details">
-                    {details}
-                </div>
-                {/* show link nav */}
-                <div className="link-nav">
-                    {nav}
-                </div>
-            </div>
-        </a>
+		<div className='link-container' data-testid='sublink'>
+			{/* show link logo */}
+			{logo}
+			{/* show link details */}
+			<div className='link-content'>
+				<div className='link-details'>{details}</div>
+				{/* show link nav */}
+				<div className='link-nav'>{nav}</div>
+			</div>
+		</div>
 	);
 };
 

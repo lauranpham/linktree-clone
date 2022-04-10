@@ -8,16 +8,15 @@ const Links = ({ links }) => {
 	return (
 		<div className='links-container'>
 			{links.map((link) => {
-                const {type} = link;
-                if (type === "shows") {
-                    return <ShowsLink {...link} />;
-                } 
-                if (type === 'music') {
-                    return <MusicLink {...link}/>;
-                }
-                return <ClassicLink {...link} />;
+				const { type } = link;
+				if (type === 'shows') {
+					return <ShowsLink {...link} />;
 				}
-            )}
+				if (type === 'music') {
+					return <MusicLink {...link} />;
+				}
+				return <ClassicLink {...link} />;
+			})}
 		</div>
 	);
 };

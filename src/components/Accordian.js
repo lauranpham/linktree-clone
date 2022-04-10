@@ -7,16 +7,18 @@ const Accordian = ({ header, content, footer }) => {
 		setOpen(!open);
 	};
 
-    const footerWrapper = footer ? <div className='accordian-footer'>{footer}</div> : null
+	const footerWrapper = footer ? (
+		<div className='accordian-footer'>{footer}</div>
+	) : null;
 
-    const contentWrapper = (
-        <>
-            <div className='accordian-content'>
-                <div className='accordian-body'>{content}</div>
-                {footerWrapper}
-            </div>
-        </>
-    )
+	const contentWrapper = (
+		<>
+			<div className='accordian-content'>
+				<div className='accordian-body'>{content}</div>
+				{footerWrapper}
+			</div>
+		</>
+	);
 	return (
 		<div className='accordian-container'>
 			<div className='accordian-header' onClick={toggleOpen}>
@@ -28,8 +30,8 @@ const Accordian = ({ header, content, footer }) => {
 };
 
 Accordian.defaultPropTypes = {
-    header: "",
-    content: "",
-}
+	header: '',
+	content: '',
+};
 
 export default Accordian;
