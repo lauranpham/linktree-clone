@@ -28,7 +28,7 @@ const renderShow = (show) => {
 		) : (
 			<p>{status}</p>
 		);
-	return <SubLink key={id} details={showDetails} nav={showLink} />;
+	return <SubLink key={id} details={showDetails} nav={showLink} url={url}/>;
 };
 
 const ShowsLink = ({ shows, title }) => {

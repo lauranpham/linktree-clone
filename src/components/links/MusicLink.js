@@ -16,7 +16,7 @@ const renderMusicService = (service) => {
 	);
 	const logo = getSocialIcon(name);
 	return (
-		<SubLink key={id} logo={logo} details={musicDetails} nav={musicLink} />
+		<SubLink key={id} logo={logo} details={musicDetails} nav={musicLink} url={url} />
 	);
 };
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SubLink = ({ logo, details, nav }) => {    
+const SubLink = ({ logo, details, nav, url }) => {    
 	return (
-        <div className="link-container">
+        <a href={url} target="_blank" className="link-container">
             {/* show link logo */}
             {logo && 
             <div className="icon-container">
@@ -20,7 +20,7 @@ const SubLink = ({ logo, details, nav }) => {
                     {nav}
                 </div>
             </div>
-        </div>
+        </a>
 	);
 };
 
