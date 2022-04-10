@@ -6,6 +6,8 @@ const Accordian = ({ header, content, footer }) => {
 		e.preventDefault();
 		setOpen(!open);
 	};
+	// TODO: update accordian to close other opened by creating a "selectedLink" state in App parent
+	// and passing the prop to accordian component
 
 	const footerWrapper = footer ? (
 		<div className='accordian-footer'>{footer}</div>

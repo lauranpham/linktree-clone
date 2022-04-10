@@ -3,6 +3,7 @@ import '@testing-library/jest-dom';
 import { render, fireEvent, screen } from '@testing-library/react';
 import ShowsLink from '../links/ShowsLink';
 
+// TODO: add more tests e.g. opening an accordian will close the others, shows will be displayed in descending date order, checking the number of streaming services displayed matches the number that is loaded 
 const shows = [
 	{
 		id: '1',
