@@ -4,7 +4,7 @@
 Variables 
 ======
 */
-/* globally theme by users preferences - backgroundcolor, color */
+/* todo: import users theme preferences - mainBackground, primaryButtonColor, secondaryButtonColor, primaryColor */
 :root {
 	--primaryButtonColor: #39e09b;
 	--secondaryButtonColor: #263238;
