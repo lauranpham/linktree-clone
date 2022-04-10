@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* 
+====== 
+Variables 
+======
+*/
+/* globally theme by users preferences - backgroundcolor, color */
+:root {
+	--primaryButtonColor: #39e09b;
+	--secondaryButtonColor: #263238;
+	--primaryColor: #263238;
+	--dividerColor: #dadee0;
+	--mainOverlay: #f5f7f8;
+	--mainBackground: #ffff;
+	--iconColor: #455a64;
+	--linkHover: #ebeef1;
+	--mainTransition: all 0.3s linear;
+	--mainFontFamily: 'Karla', sans-serif;
+	--mainLineHeight: 24px;
+	--mainPadding: 12px;
+	--mainMargin: 16px;
+	--mainLogoHeight: 16px;
+	--mainBorderRadius: 8px;
+	--maxWidth: 680px;
+	--mainTransition: all 0.3s linear;
+	--mainSpacing: 0.3rem;
+	--lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+	--darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* 
+  ====== 
+  Global Styles 
+  ======
+  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--mainFontFamily);
+	color: var(--primaryColor);
+	background: var(--mainBackground);
+	line-height: var(--mainLineHeight);
+	font-size: 12px;
+}
+p {
+	font-size: 12px;
+	letter-spacing: -0.24px;
+}
+/* music/show link heading, profile title */
+h5 {
+	letter-spacing: -0.32px;
+	font-size: 16px;
+	line-height: 28px;
+}
+/* link button headings */
+h6 {
+	letter-spacing: -0.28px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+a {
+	text-decoration: none;
+	color: var(--mainBlack);
+}
+img {
+	width: 100%;
+	display: block;
+}
+
+/* 
+  ====== 
+  Container 
+  ======
+  */
+.container {
+	padding: 32px 12px;
+	min-height: 100vh;
+	width: 100%;
+	margin: 0px auto;
+	max-width: var(--maxWidth);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.text-container {
+	display:flex;
+	justify-content: center;
+	margin: var(--mainMargin);
+}
+
+/* 
+  ====== 
+  Header     
+  ======
+  */
+.header-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.profile-container {
+	padding-bottom: 80px;
+}
+
+.image-container {
+	width: 64px;
+	height: 64px;
+	margin-bottom: 8px;
+}
+
+/* 
+  ====== 
+  Links     
+  ======
+  */
+
+.link-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: var(--mainMargin);
+	padding-left: var(--mainMargin);
+}
+.link-container:hover {
+	background: var(--linkHover);
+}
+.link-content {
+	border-bottom: 1px solid var(--dividerColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: var(--mainPadding);
+	padding-top: var(--mainPadding);
+	width: 100%;
+}
+
+h5.link-details {
+	text-transform: capitalize;
+}
+
+/* 
+  ====== 
+  Footer     
+  ======
+  */
+
+.footer-container {
+	height: var(--mainLogoHeight);
+	display: flex;
+}
+
+/* 
+  ====== 
+  Icons 
+  ======
+  */
+.icon-container {
+	width: 24px;
+	height: 24px;
+	margin-right: var(--mainMargin);
+}
+
+.icon-container * {
+	color: var(--iconColor);
+}
+
+/* 
+  ====== 
+  Music Player 
+  ======
+  */
+
+.music-player-container {
+	margin: 10px 16px 0px 16px;
+}
+/* 
+  ====== 
+  Buttons 
+  ======
+  */
+.btn-primary {
+	background: var(--primaryButtonColor);
+	color: var(--secondaryButtonColor);
+	letter-spacing: var(--mainSpacing);
+	border: 1px solid var(--primaryButtonColor);
+	transition: var(--mainTransition);
+	cursor: pointer;
+	border-radius: var(--mainBorderRadius);
+	display: inline-block;
+	width: 100%;
+}
+.btn-primary {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background: var(--primaryButtonColor);
+	color: var(--secondaryButtonColor);
+	border: 1px solid var(--primaryButtonColor);
+}
+.btn-primary.show-margin {
+	margin-bottom: var(--mainMargin);
+}
+.btn-primary:hover {
+	background: var(--secondaryButtonColor);
+	color: var(--primaryButtonColor);
+}
+
+/* 
+  ====== 
+  Accordian 
+  ======
+  */
+
+.accordian-container {
+	margin-bottom: var(--mainMargin);
+}
+
+.accordian-content {
+	background: var(--mainOverlay);
+	max-height: 50vw;
+	overflow: auto;
+}
+
+.accordian-footer {
+	overflow: auto;
+}
+
+/* 
+  ====== 
+  Misc 
+  ======
+  */
+
+.songkick-logo-container {
+	height: var(--mainLogoHeight);
+	display: flex;
+	margin: var(--mainMargin);
+}
