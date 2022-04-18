@@ -31,9 +31,4 @@ const Accordian = ({ header, content, footer }) => {
 	);
 };
 
-Accordian.defaultPropTypes = {
-	header: '',
-	content: '',
-};
-
 export default Accordian;

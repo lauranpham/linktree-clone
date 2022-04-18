@@ -17,9 +17,9 @@ const SubLink = ({ logo, details, nav }) => {
 };
 
 SubLink.propTypes = {
-	date: PropTypes.string,
-	location: PropTypes.string,
-	url: PropTypes.string,
+	logo: PropTypes.object,
+	details: PropTypes.object,
+	nav: PropTypes.object,
 };
 
 export default SubLink;

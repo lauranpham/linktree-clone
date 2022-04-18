@@ -15,7 +15,7 @@ const Header = ({ image, title, bio }) => {
 };
 
 Header.propTypes = {
-	img: PropTypes.string,
+	image: PropTypes.string,
 	title: PropTypes.string,
 	bio: PropTypes.string,
 };
