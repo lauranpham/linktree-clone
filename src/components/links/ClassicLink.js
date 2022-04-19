@@ -5,7 +5,7 @@ import PrimaryLink from '../PrimaryLink';
 const ClassicLink = ({ title, url }) => {
 	return (
 		<a href={url} target='_blank'>
-			<PrimaryLink title={title} showMargin />
+			<PrimaryLink title={title} classes='show-margin' />
 		</a>
 	);
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PrimaryLink = ({ title, showMargin }) => {
+const PrimaryLink = ({ title, classes}) => {
 	return (
 		<button
-			className={`${showMargin ? 'btn-primary show-margin' : 'btn-primary'}`}
+			className={`btn-primary ${classes}`}
 		>
 			{title}
 		</button>
