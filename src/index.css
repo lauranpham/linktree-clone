@@ -209,6 +209,7 @@ h5.link-details {
 .btn-primary:hover {
 	background: var(--secondaryButtonColor);
 	color: var(--primaryButtonColor);
+	border: 1px solid var(--secondaryButtonColor);
 }
 
 /* 
